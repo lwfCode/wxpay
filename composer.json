@@ -1,5 +1,6 @@
 {
     "name": "lwfdeveloper/wx-pay",
+    "version": "1.0.1",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,7 +16,7 @@
     },
     "autoload":{
         "psr-4":{
-            "lwfdeveloper\\wxpay\\":"src/WeChatPay"
+            "lwfdeveloper\\wxpay\\":"src/"
         }
     }
 }
