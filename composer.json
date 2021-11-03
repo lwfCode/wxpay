@@ -1,0 +1,21 @@
+{
+    "name": "lwfdeveloper/wx-pay",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mr.lei",
+            "email": "lei809721586@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=5.6",
+        "gaoming13/http-curl": "^2.2"
+    },
+    "autoload":{
+        "psr-4":{
+            "lwfdeveloper\\wxpay\\":"src/WeChatPay"
+        }
+    }
+}
