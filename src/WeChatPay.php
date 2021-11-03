@@ -35,7 +35,7 @@ class WeChatPay
     public static function getInstance($options = [])
     {
         if (is_null ( self::$_instance ) || isset ( self::$_instance )) {
-            self::$_instance = new self ($option['appid'],$option['key'],$option['mch_id']);
+            self::$_instance = new self ($options['appid'],$options['key'],$options['mch_id']);
         }
         return self::$_instance;
     }
@@ -51,7 +51,7 @@ class WeChatPay
      * @param [type] $callback_url
      * @return void
      */
-    public function CreateWeChatOrder($trade_no, $reason, $openid, $money, $callback_url = null)
+    public function CreateWeChatOrder($trade_no, $reason,  $money, $openid, $callback_url = null)
     {
         $postArr = [
             'appid' => $this->option['appid'],
