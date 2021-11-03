@@ -178,9 +178,8 @@ class WeChatPay
      */
     public function sign($arr)
     {
-        if(!empty($arr['sign'])){
-            unset($arr['sign']);
-        }
+        if(!empty($arr['sign'])) unset($arr['sign']);
+
         ksort($arr);
         $query = urldecode(http_build_query($arr)) . '&key=' . $this->option['key'];
         return strtoupper(md5($query));
