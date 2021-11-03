@@ -21,6 +21,7 @@ $weChatPay = \lwfdeveloper\wxpay\WeChatPay::getInstance($options);//实例化单
 $orderId = rand(000000, 999999) . date('YmdHisu') . rand(000000, 999999); 
 $openid = 'create wechat pay openid';
 $reason = "create wechat pay order";
+
 /** 支付金额*/
 $amount = 100;
 $callbackUrl = "http://api.develop.cn/api/wechat/callback";

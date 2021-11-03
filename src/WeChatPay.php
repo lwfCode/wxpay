@@ -5,6 +5,7 @@ use Gaoming13\HttpCurl\HttpCurl;
 
 class WeChatPay
 {
+    
     //保存例实例在此属性中
     private static $_instance;
 
